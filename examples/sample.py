@@ -122,7 +122,8 @@ else:
             print(param.data)
         encoder.vectors_stats()
         encoder.init_vectors(src.vocab.vectors)
-        encoder.scale_vectors(0.08)
+        # encoder.scale_vectors(0.08)
+        encoder.normalize_vectors(109.7)
         encoder.vectors_stats()
         for param in seq2seq.parameters():
             print(param.data)
@@ -145,8 +146,9 @@ else:
     seq2seq = t.train(seq2seq, train,
                       num_epochs=30, dev_data=dev, test_data=test,
                       optimizer=optimizer,
-                      teacher_forcing_ratio=0.5,
+                      teacher_forcing_ratio=0,
                       resume=opt.resume)
+    # teacher_forcing_ratio=0.5,
 
 # predictor = Predictor(seq2seq, input_vocab, output_vocab)
 

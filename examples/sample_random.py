@@ -143,8 +143,9 @@ else:
     seq2seq = t.train(seq2seq, train,
                       num_epochs=30, dev_data=dev, test_data=test,
                       optimizer=optimizer,
-                      teacher_forcing_ratio=0.5,
+                      teacher_forcing_ratio=0,
                       resume=opt.resume)
+    # teacher_forcing_ratio=0.5,
 
 # predictor = Predictor(seq2seq, input_vocab, output_vocab)
 
