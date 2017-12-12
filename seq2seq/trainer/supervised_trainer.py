@@ -131,11 +131,11 @@ class SupervisedTrainer(object):
             log_msg = "Finished epoch %d: Train %s: %.4f" % (epoch, self.loss.name, epoch_loss_avg)
             if dev_data is not None:
                 dev_loss, accuracy = self.evaluator.evaluate(model, dev_data)
-                max_dev_accuracy = torch.max(max_dev_accuracy, accuracy)
+                max_dev_accuracy = max(max_dev_accuracy, accuracy)
                 log_msg += ", Dev %s: %.4f, Accuracy: %.4f" % (self.loss.name, dev_loss, accuracy)
                 if test_data is not None:
                     test_loss, accuracy = self.evaluator.evaluate(model, test_data)
-                    max_test_accuracy = torch.max(max_test_accuracy, accuracy)
+                    max_test_accuracy = max(max_test_accuracy, accuracy)
                     log_msg += ", Test %s: %.4f, Accuracy: %.4f" % (self.loss.name, test_loss, accuracy)
                     self.optimizer.update(test_loss, epoch)
                 self.optimizer.update(dev_loss, epoch)
