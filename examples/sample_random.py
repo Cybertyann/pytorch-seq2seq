@@ -114,11 +114,9 @@ else:
             param.data.uniform_(-0.08, 0.08)
             print(param.data)
         encoder.vectors_stats()
-        encoder.init_vectors(src.vocab.vectors)
-        encoder.scale_vectors(0.08)
-        encoder.vectors_stats()
-        for param in seq2seq.parameters():
-            print(param.data)
+        # encoder.init_vectors(src.vocab.vectors)
+        # for param in seq2seq.parameters():
+        #     print(param.data)
 
         if torch.cuda.is_available():
             seq2seq.cuda()

@@ -1,3 +1,4 @@
+import torch
 import torch.nn as nn
 
 from .baseRNN import BaseRNN
@@ -43,6 +44,18 @@ class EncoderRNN(BaseRNN):
         self.embedding = nn.Embedding(vocab_size, hidden_size)
         self.rnn = self.rnn_cell(hidden_size, hidden_size, n_layers,
                                  batch_first=True, bidirectional=bidirectional, dropout=dropout_p)
+
+    def init_vectors(self, vectors):
+        self.embedding.weight.data = vectors
+
+    def scale_vectors(self, max_val):
+        self.embedding.weight.data = (
+            self.embedding.weight.data / torch.max(torch.abs(self.embedding.weight.data)) * max_val)
+
+    def vectors_stats(self):
+        print("max: ", torch.max(self.embedding.weight.data))
+        print("min: ", torch.min(self.embedding.weight.data))
+        print("norm:", torch.norm(self.embedding.weight.data))
 
     def forward(self, input_var, input_lengths=None):
         """
