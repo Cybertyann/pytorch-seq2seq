@@ -33,6 +33,8 @@ parser.add_argument('--train_path', action='store', dest='train_path',
                     help='Path to train data')
 parser.add_argument('--dev_path', action='store', dest='dev_path',
                     help='Path to dev data')
+parser.add_argument('--test_path', action='store', dest='test_path',
+                    help='Path to test data')
 parser.add_argument('--expt_dir', action='store', dest='expt_dir', default='./experiment',
                     help='Path to experiment directory. If load_checkpoint is True, then path to checkpoint directory has to be provided')
 parser.add_argument('--load_checkpoint', action='store', dest='load_checkpoint',
@@ -71,6 +73,11 @@ else:
     )
     dev = torchtext.data.TabularDataset(
         path=opt.dev_path, format='tsv',
+        fields=[('src', src), ('tgt', tgt)],
+        filter_pred=len_filter
+    )
+    test = torchtext.data.TabularDataset(
+        path=opt.test_path, format='tsv',
         fields=[('src', src), ('tgt', tgt)],
         filter_pred=len_filter
     )
@@ -123,19 +130,18 @@ else:
 
         # Optimizer and learning rate scheduler can be customized by
         # explicitly constructing the objects and pass to the trainer.
-        #
-        # optimizer = Optimizer(torch.optim.Adam(seq2seq.parameters()), max_grad_norm=5)
-        # scheduler = StepLR(optimizer.optimizer, 1)
-        # optimizer.set_scheduler(scheduler)
+        optimizer = Optimizer(torch.optim.Adam(seq2seq.parameters()), max_grad_norm=5)
+        scheduler = StepLR(optimizer.optimizer, step_size=10, gamma=0.5)
+        optimizer.set_scheduler(scheduler)
 
     # train
 
-    t = SupervisedTrainer(loss=loss, batch_size=32,
-                          checkpoint_every=50,
-                          print_every=10, expt_dir=opt.expt_dir)
+    t = SupervisedTrainer(loss=loss, batch_size=16,
+                          checkpoint_every=2000,
+                          print_every=50, expt_dir=opt.expt_dir)
 
     seq2seq = t.train(seq2seq, train,
-                      num_epochs=50, dev_data=dev,
+                      num_epochs=30, dev_data=dev, test_data=test,
                       optimizer=optimizer,
                       teacher_forcing_ratio=0.5,
                       resume=opt.resume)

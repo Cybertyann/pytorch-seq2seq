@@ -66,7 +66,7 @@ class SupervisedTrainer(object):
         return loss.get_loss()
 
     def _train_epoches(self, data, model, n_epochs, start_epoch, start_step,
-                       dev_data=None, teacher_forcing_ratio=0):
+                       dev_data=None, test_data=None, teacher_forcing_ratio=0):
         log = self.logger
 
         print_loss_total = 0  # Reset every print_every
@@ -83,6 +83,8 @@ class SupervisedTrainer(object):
 
         step = start_step
         step_elapsed = 0
+        max_dev_accuracy = -1
+        max_test_accuracy = -1
         for epoch in range(start_epoch, n_epochs + 1):
             log.debug("Epoch: %d, Step: %d" % (epoch, step))
 
@@ -129,16 +131,23 @@ class SupervisedTrainer(object):
             log_msg = "Finished epoch %d: Train %s: %.4f" % (epoch, self.loss.name, epoch_loss_avg)
             if dev_data is not None:
                 dev_loss, accuracy = self.evaluator.evaluate(model, dev_data)
-                self.optimizer.update(dev_loss, epoch)
+                max_dev_accuracy = torch.max(max_dev_accuracy, accuracy)
                 log_msg += ", Dev %s: %.4f, Accuracy: %.4f" % (self.loss.name, dev_loss, accuracy)
+                if test_data is not None:
+                    test_loss, accuracy = self.evaluator.evaluate(model, test_data)
+                    max_test_accuracy = torch.max(max_test_accuracy, accuracy)
+                    log_msg += ", Test %s: %.4f, Accuracy: %.4f" % (self.loss.name, test_loss, accuracy)
+                    self.optimizer.update(test_loss, epoch)
+                self.optimizer.update(dev_loss, epoch)
                 model.train(mode=True)
             else:
                 self.optimizer.update(epoch_loss_avg, epoch)
 
+            log_msg += "\nBest dev: %.4f, Best test: %.4f" % (max_dev_accuracy, max_test_accuracy)
             log.info(log_msg)
 
     def train(self, model, data, num_epochs=5,
-              resume=False, dev_data=None,
+              resume=False, dev_data=None, test_data=None,
               optimizer=None, teacher_forcing_ratio=0):
         """ Run training for a given model.
 
@@ -180,6 +189,6 @@ class SupervisedTrainer(object):
         self.logger.info("Optimizer: %s, Scheduler: %s" % (self.optimizer.optimizer, self.optimizer.scheduler))
 
         self._train_epoches(data, model, num_epochs,
-                            start_epoch, step, dev_data=dev_data,
+                            start_epoch, step, dev_data=dev_data, test_data=test_data,
                             teacher_forcing_ratio=teacher_forcing_ratio)
         return model
