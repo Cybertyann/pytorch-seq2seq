@@ -123,7 +123,7 @@ else:
         encoder.vectors_stats()
         encoder.init_vectors(src.vocab.vectors)
         # encoder.scale_vectors(0.08)
-        encoder.normalize_vectors(109.7)
+        # encoder.normalize_vectors(109.7)
         encoder.vectors_stats()
         for param in seq2seq.parameters():
             print(param.data)
@@ -134,25 +134,25 @@ else:
         # Optimizer and learning rate scheduler can be customized by
         # explicitly constructing the objects and pass to the trainer.
         optimizer = Optimizer(torch.optim.Adam(seq2seq.parameters()), max_grad_norm=5)
-        scheduler = StepLR(optimizer.optimizer, step_size=10, gamma=0.5)
-        optimizer.set_scheduler(scheduler)
+        # scheduler = StepLR(optimizer.optimizer, step_size=10, gamma=0.5)
+        # optimizer.set_scheduler(scheduler)
 
     # train
 
-    t = SupervisedTrainer(loss=loss, batch_size=16,
+    t = SupervisedTrainer(loss=loss, batch_size=32,
                           checkpoint_every=2000,
                           print_every=50, expt_dir=opt.expt_dir)
 
     seq2seq = t.train(seq2seq, train,
                       num_epochs=30, dev_data=dev, test_data=test,
                       optimizer=optimizer,
-                      teacher_forcing_ratio=0,
+                      teacher_forcing_ratio=0.5,
                       resume=opt.resume)
     # teacher_forcing_ratio=0.5,
 
-# predictor = Predictor(seq2seq, input_vocab, output_vocab)
+predictor = Predictor(seq2seq, input_vocab, output_vocab)
 
-# while True:
-#     seq_str = raw_input("Type in a source sequence:")
-#     seq = seq_str.strip().split()
-#     print(predictor.predict(seq))
+while True:
+    seq_str = raw_input("Type in a source sequence:")
+    seq = seq_str.strip().split()
+    print(predictor.predict(seq))
