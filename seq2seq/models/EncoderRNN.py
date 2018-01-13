@@ -56,9 +56,13 @@ class EncoderRNN(BaseRNN):
           self.embedding.weight.data / torch.norm(self.embedding.weight.data) * target_norm)
 
     def vectors_stats(self):
-        print("max: ", torch.max(self.embedding.weight.data))
-        print("min: ", torch.min(self.embedding.weight.data))
-        print("norm:", torch.norm(self.embedding.weight.data))
+        max_val = torch.max(self.embedding.weight.data)
+        min_val = torch.min(self.embedding.weight.data)
+        norm_val = torch.norm(self.embedding.weight.data)
+        print("max:  ", max_val)
+        print("min:  ", min_val)
+        print("norm: ", norm_val)
+        return max_val, min_val, norm_val
 
     def forward(self, input_var, input_lengths=None):
         """
