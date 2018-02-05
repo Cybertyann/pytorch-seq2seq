@@ -84,6 +84,7 @@ class SupervisedTrainer(object):
         step = start_step
         step_elapsed = 0
         max_dev_accuracy = -1
+        max_dev_test_accuracy = -1
         max_test_accuracy = -1
         for epoch in range(start_epoch, n_epochs + 1):
             log.debug("Epoch: %d, Step: %d" % (epoch, step))
@@ -128,22 +129,26 @@ class SupervisedTrainer(object):
 
             epoch_loss_avg = epoch_loss_total / min(steps_per_epoch, step - start_step)
             epoch_loss_total = 0
-            log_msg = "Finished epoch %d: Train %s: %.4f" % (epoch, self.loss.name, epoch_loss_avg)
+            log_msg = "\nFinished epoch %d: Train %s: %.4f\n" % (epoch, self.loss.name, epoch_loss_avg)
             if dev_data is not None:
-                dev_loss, accuracy = self.evaluator.evaluate(model, dev_data)
-                max_dev_accuracy = max(max_dev_accuracy, accuracy)
-                log_msg += ", Dev %s: %.4f, Accuracy: %.4f" % (self.loss.name, dev_loss, accuracy)
+                train_loss, train_accuracy = self.evaluator.evaluate(model, data)
+                log_msg += "Train %s: %.4f, Accuracy: %.4f\n" % (self.loss.name, train_loss, train_accuracy)
+                dev_loss, dev_accuracy = self.evaluator.evaluate(model, dev_data)
+                max_dev_accuracy = max(max_dev_accuracy, dev_accuracy)
+                log_msg += "Dev %s: %.4f, Accuracy: %.4f\n" % (self.loss.name, dev_loss, dev_accuracy)
                 if test_data is not None:
-                    test_loss, accuracy = self.evaluator.evaluate(model, test_data)
-                    max_test_accuracy = max(max_test_accuracy, accuracy)
-                    log_msg += ", Test %s: %.4f, Accuracy: %.4f" % (self.loss.name, test_loss, accuracy)
-                    self.optimizer.update(test_loss, epoch)
+                    test_loss, test_accuracy = self.evaluator.evaluate(model, test_data)
+                    max_test_accuracy = max(max_test_accuracy, test_accuracy)
+                    if max_dev_accuracy == dev_accuracy:
+                        max_dev_test_accuracy = max_test_accuracy
+                    log_msg += "Test %s: %.4f, Accuracy: %.4f\n" % (self.loss.name, test_loss, test_accuracy)
+                    # self.optimizer.update(test_loss, epoch)
                 self.optimizer.update(dev_loss, epoch)
                 model.train(mode=True)
             else:
                 self.optimizer.update(epoch_loss_avg, epoch)
-
-            log_msg += "\nBest dev: %.4f, Best test: %.4f" % (max_dev_accuracy, max_test_accuracy)
+            log_msg += "Best dev: %.4f with test: %.4f\nBest test: %.4f\n" % (
+                max_dev_accuracy, max_dev_test_accuracy, max_test_accuracy)
             log.info(log_msg)
 
     def train(self, model, data, num_epochs=5,
