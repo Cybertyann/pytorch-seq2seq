@@ -1,0 +1,672 @@
+sg100r.txt
+pos
+1
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.03,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	90.274 (91.359, 98.589, 13)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	92.585 (93.257, 99.466, 5)	91.623 (92.857, 99.131, 5)	91.767 (93.057, 99.960, 16)	89.697 (91.359, 99.274, 17)	
+0.1	92.826 (93.706, 99.155, 5)	92.682 (93.856, 97.066, 2)	92.778 (93.756, 97.050, 2)	92.730 (93.706, 97.042, 2)	
+0.03	93.308 (94.206, 97.967, 6)	92.971 (94.156, 98.047, 6)	0.000 (0.000, 0.000, 0)	92.682 (94.106, 97.568, 5)	
+0.01	0.000 (0.000, 0.000, 0)	93.019 (94.056, 97.441, 13)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	93.163 (93.656, 96.612, 42)	93.211 (93.806, 97.106, 43)	93.308 (94.056, 97.289, 38)	93.404 (94.006, 97.377, 38)	
+0.001	0.000 (0.000, 0.000, 0)	92.682 (93.007, 95.312, 48)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+93.308
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task pos --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 1.0 --out /projects/lego/vectors_tuned/skip_pos.txt > skip_pos_log
+
+2
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	90.082 (90.909, 98.621, 14)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	92.682 (93.157, 99.482, 5)	92.104 (93.007, 99.418, 6)	91.623 (92.657, 99.290, 8)	90.852 (91.658, 99.665, 19)	
+0.1	92.634 (93.656, 98.071, 3)	92.152 (94.006, 99.051, 5)	91.815 (93.706, 98.916, 5)	92.393 (93.706, 97.839, 3)	
+0.03	93.067 (94.056, 97.513, 5)	93.693 (94.206, 97.760, 5)	93.597 (94.106, 97.744, 5)	93.548 (94.106, 97.752, 5)	
+0.01	0.000 (0.000, 0.000, 0)	93.500 (94.106, 97.784, 16)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	93.163 (93.756, 96.436, 40)	93.211 (94.006, 96.859, 37)	93.115 (94.106, 96.612, 28)	93.308 (94.006, 96.388, 25)	
+0.001	0.000 (0.000, 0.000, 0)	92.826 (93.107, 95.057, 42)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+93.693
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task pos --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/skip_pos.txt > skip_pos_log
+
+ner
+1
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	84.920 (93.390, 98.520, 7)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	88.150 (94.820, 99.200, 2)	90.030 (94.470, 99.790, 5)	88.940 (94.290, 98.360, 3)	85.200 (94.300, 99.800, 7)	
+0.1	87.530 (95.010, 98.240, 3)	88.110 (95.050, 99.710, 6)	88.640 (94.920, 99.920, 18)	88.920 (94.860, 99.980, 19)	
+0.03	86.230 (94.480, 98.720, 9)	87.520 (94.820, 99.790, 21)	87.750 (94.770, 99.930, 35)	87.870 (94.830, 99.980, 29)	
+0.01	0.000 (0.000, 0.000, 0)	87.130 (94.400, 99.180, 39)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	84.970 (90.830, 94.530, 48)	84.760 (92.450, 96.250, 48)	85.630 (93.310, 97.140, 49)	85.870 (93.440, 97.430, 48)	
+0.001	0.000 (0.000, 0.000, 0)	81.700 (86.980, 89.720, 48)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+88.110
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task ner --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.1 --lr_decay 0.3 --out /projects/lego/vectors_tuned/skip_ner.txt > skip_ner_log
+
+2
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	79.850 (93.080, 99.180, 8)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	88.080 (94.540, 99.920, 10)	89.950 (94.500, 99.920, 7)	87.690 (94.340, 99.740, 7)	86.310 (94.280, 99.950, 38)	
+0.1	88.430 (95.110, 98.310, 3)	87.300 (95.120, 98.220, 3)	88.540 (95.060, 99.850, 11)	88.820 (95.050, 99.530, 7)	
+0.03	87.320 (94.480, 99.490, 25)	87.470 (94.770, 99.640, 16)	87.280 (94.980, 99.900, 20)	88.130 (94.910, 99.900, 21)	
+0.01	0.000 (0.000, 0.000, 0)	87.430 (94.340, 99.280, 45)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	84.870 (90.060, 94.710, 48)	85.650 (92.050, 96.110, 48)	86.040 (92.820, 96.810, 47)	86.800 (93.310, 97.140, 49)	
+0.001	0.000 (0.000, 0.000, 0)	82.010 (86.880, 89.350, 48)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+87.300
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task ner --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.1 --lr_decay 0.3 --out /projects/lego/vectors_tuned/skip_ner.txt > skip_ner_log
+
+chunk
+1
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	94.270 (97.410, 98.610, 31)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	96.250 (98.440, 98.850, 6)	96.640 (98.560, 99.280, 11)	96.630 (98.620, 99.280, 10)	94.920 (98.440, 98.190, 7)	
+0.1	0.000 (0.000, 0.000, 0)	96.690 (98.670, 99.020, 16)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	96.910 (98.330, 96.470, 2)	96.530 (98.390, 98.190, 17)	97.130 (98.620, 98.730, 25)	97.130 (98.680, 99.100, 43)	
+0.01	0.000 (0.000, 0.000, 0)	97.020 (98.270, 96.030, 5)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	96.750 (98.210, 96.200, 20)	96.800 (98.100, 95.930, 15)	96.640 (98.150, 97.250, 43)	96.640 (98.150, 96.330, 18)	
+0.001	0.000 (0.000, 0.000, 0)	96.580 (97.920, 95.700, 44)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+97.130
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task chunk --window_size 3 --l2reg 0.0001 --lower 1 --lr_init 0.03 --lr_decay 0.03 --out /projects/lego/vectors_tuned/skip_chunk.txt > skip_chunk_log
+
+2
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	94.190 (97.750, 98.650, 36)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	96.580 (98.440, 98.850, 6)	96.640 (98.500, 99.280, 11)	96.960 (98.620, 99.290, 10)	96.240 (98.390, 99.560, 22)	
+0.1	0.000 (0.000, 0.000, 0)	96.530 (98.730, 98.740, 10)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	96.640 (98.330, 96.980, 3)	96.640 (98.440, 98.050, 9)	96.910 (98.620, 98.790, 28)	97.130 (98.730, 99.050, 36)	
+0.01	0.000 (0.000, 0.000, 0)	96.640 (98.330, 96.080, 5)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	96.640 (98.270, 96.260, 20)	96.530 (98.270, 96.370, 19)	96.420 (98.270, 96.400, 19)	96.530 (98.270, 96.430, 19)	
+0.001	0.000 (0.000, 0.000, 0)	96.580 (97.920, 95.900, 49)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+96.530
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task chunk --window_size 3 --l2reg 0.0001 --lower 1 --lr_init 0.1 --lr_decay 0.3 --out /projects/lego/vectors_tuned/skip_chunk.txt > skip_chunk_log
+
+polar
+1
+	1.0				0.3				0.1				0.03				
+1.0	0.827 (0.829, 0.937, 2)	0.815 (0.819, 0.922, 2)	0.691 (0.669, 0.788, 1)	0.675 (0.665, 0.760, 0)	
+0.3	0.845 (0.834, 0.996, 14)	0.840 (0.831, 0.969, 2)	0.840 (0.834, 0.967, 2)	0.845 (0.836, 0.954, 2)	
+0.1	0.852 (0.841, 0.996, 46)	0.848 (0.837, 0.997, 18)	0.852 (0.839, 0.997, 9)	0.851 (0.839, 0.997, 9)	
+0.03	0.848 (0.837, 0.974, 47)	0.855 (0.844, 0.996, 45)	0.851 (0.842, 0.998, 37)	0.853 (0.842, 0.996, 23)	
+0.01	0.832 (0.827, 0.913, 44)	0.844 (0.834, 0.963, 46)	0.852 (0.841, 0.981, 47)	0.854 (0.842, 0.987, 44)	
+0.003	0.807 (0.808, 0.838, 47)	0.817 (0.813, 0.866, 49)	0.820 (0.817, 0.874, 46)	0.824 (0.819, 0.874, 43)	
+0.001	0.732 (0.729, 0.739, 49)	0.759 (0.764, 0.766, 49)	0.768 (0.771, 0.777, 49)	0.770 (0.774, 0.782, 49)	
+0.855
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task polar --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/skip_polar.txt > skip_polar_log
+
+2
+	1.0				0.3				0.1				0.03				
+1.0	0.822 (0.814, 0.983, 9)	0.714 (0.732, 0.944, 15)	0.734 (0.724, 0.781, 0)	0.734 (0.724, 0.781, 0)	
+0.3	0.842 (0.833, 0.997, 15)	0.844 (0.833, 0.969, 2)	0.836 (0.834, 0.983, 4)	0.844 (0.839, 0.986, 4)	
+0.1	0.852 (0.841, 0.995, 23)	0.852 (0.837, 0.994, 9)	0.854 (0.839, 0.991, 7)	0.854 (0.840, 0.992, 7)	
+0.03	0.849 (0.835, 0.975, 47)	0.853 (0.843, 0.995, 36)	0.851 (0.843, 0.998, 36)	0.852 (0.844, 0.998, 26)	
+0.01	0.829 (0.825, 0.903, 35)	0.847 (0.830, 0.963, 46)	0.854 (0.836, 0.981, 46)	0.855 (0.841, 0.990, 46)	
+0.003	0.802 (0.802, 0.834, 47)	0.814 (0.813, 0.861, 46)	0.820 (0.819, 0.876, 49)	0.821 (0.820, 0.875, 44)	
+0.001	0.725 (0.719, 0.731, 49)	0.748 (0.748, 0.756, 49)	0.759 (0.758, 0.766, 49)	0.761 (0.763, 0.771, 49)	
+0.852
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task polar --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.03 --out /projects/lego/vectors_tuned/skip_polar.txt > skip_polar_log
+
+freq_uni
+1
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	0.283 (0.283, 0.380, 1)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	0.293 (0.296, 0.394, 1)	0.288 (0.294, 0.366, 1)	0.289 (0.294, 0.368, 1)	0.291 (0.293, 0.353, 0)	
+0.1	0.000 (0.000, 0.000, 0)	0.301 (0.303, 0.375, 1)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	0.308 (0.310, 0.357, 2)	0.307 (0.310, 0.357, 2)	0.308 (0.310, 0.357, 2)	0.308 (0.310, 0.357, 2)	
+0.01	0.000 (0.000, 0.000, 0)	0.308 (0.309, 0.387, 7)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	0.308 (0.309, 0.386, 25)	0.308 (0.309, 0.384, 23)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	0.304 (0.306, 0.346, 48)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.307
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task freq_uni --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/skip_freq_uni.txt > skip_freq_uni_log
+
+2
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	0.281 (0.283, 0.352, 1)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	0.294 (0.294, 0.309, 0)	0.294 (0.294, 0.309, 0)	0.294 (0.294, 0.309, 0)	0.294 (0.294, 0.309, 0)	
+0.1	0.000 (0.000, 0.000, 0)	0.303 (0.304, 0.352, 0)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	0.306 (0.307, 0.366, 2)	0.306 (0.308, 0.368, 2)	0.306 (0.308, 0.368, 2)	0.306 (0.308, 0.368, 2)	
+0.01	0.000 (0.000, 0.000, 0)	0.305 (0.307, 0.372, 6)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	0.304 (0.307, 0.389, 26)	0.304 (0.307, 0.375, 21)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	0.301 (0.303, 0.348, 49)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.306
+python2.7 convert_mat_to_txt.py --pre_emb sg100r.txt --task freq_uni --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/skip_freq_uni.txt > skip_freq_uni_log
+
+
+sg100r_rand.txt
+pos
+1
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.3,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.03,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	89.697 (91.558, 98.142, 10)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	90.660 (92.557, 98.262, 3)	91.141 (92.757, 99.713, 7)	90.323 (92.458, 99.801, 11)	0.000 (0.000, 0.000, 0)	
+0.1	0.000 (0.000, 0.000, 0)	90.611 (93.007, 97.584, 3)	90.467 (92.957, 97.489, 3)	0.000 (0.000, 0.000, 0)	
+0.03	91.189 (93.057, 97.210, 5)	91.382 (93.007, 97.297, 5)	0.000 (0.000, 0.000, 0)	91.719 (93.057, 98.828, 10)	
+0.01	0.000 (0.000, 0.000, 0)	91.767 (92.857, 98.358, 22)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	91.189 (92.358, 96.994, 49)	91.286 (92.507, 97.313, 46)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	89.263 (90.210, 92.546, 46)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+91.189
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task pos --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 1.0 --out /projects/lego/vectors_tuned/rand_pos.txt > rand_pos_log
+
+2
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	90.226 (90.909, 97.146, 9)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	90.660 (92.707, 98.350, 3)	90.515 (92.507, 99.569, 7)	90.997 (92.258, 99.976, 18)	89.600 (91.259, 99.649, 20)	
+0.1	0.000 (0.000, 0.000, 0)	90.611 (92.957, 97.608, 3)	90.563 (92.957, 97.505, 3)	0.000 (0.000, 0.000, 0)	
+0.03	91.286 (93.057, 97.218, 5)	91.382 (93.157, 97.313, 5)	91.719 (93.157, 98.804, 10)	91.430 (93.057, 97.393, 5)	
+0.01	0.000 (0.000, 0.000, 0)	91.526 (93.007, 97.871, 18)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	91.141 (92.507, 97.034, 49)	91.382 (92.557, 97.329, 46)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	89.119 (90.210, 92.873, 49)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+91.382
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task pos --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/rand_pos.txt > rand_pos_log
+
+ner
+1
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	84.710 (93.470, 99.690, 12)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	89.480 (94.140, 98.800, 2)	89.500 (93.930, 99.970, 7)	89.540 (94.160, 99.840, 7)	89.230 (94.010, 99.640, 7)	
+0.1	0.000 (0.000, 0.000, 0)	88.350 (94.130, 98.230, 2)	88.400 (94.190, 98.160, 2)	0.000 (0.000, 0.000, 0)	
+0.03	87.740 (93.500, 99.460, 21)	87.850 (93.510, 98.430, 7)	87.970 (93.770, 99.480, 12)	86.800 (93.690, 99.570, 11)	
+0.01	0.000 (0.000, 0.000, 0)	87.590 (93.490, 98.850, 32)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	85.820 (90.850, 95.890, 47)	86.880 (92.140, 96.700, 49)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	80.680 (85.570, 85.670, 48)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+88.400
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task ner --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.1 --lr_decay 0.1 --out /projects/lego/vectors_tuned/rand_ner.txt > rand_ner_log
+
+2
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	84.200 (93.610, 99.120, 8)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	88.320 (94.110, 99.120, 3)	89.450 (93.790, 99.970, 7)	89.540 (94.160, 99.840, 7)	85.200 (94.030, 99.610, 6)	
+0.1	0.000 (0.000, 0.000, 0)	86.840 (94.100, 98.160, 3)	88.350 (94.050, 98.130, 2)	0.000 (0.000, 0.000, 0)	
+0.03	87.740 (93.430, 99.490, 21)	87.750 (93.770, 99.410, 12)	87.910 (93.910, 99.480, 12)	88.550 (93.710, 99.210, 10)	
+0.01	0.000 (0.000, 0.000, 0)	87.570 (93.490, 98.850, 32)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	85.700 (90.780, 95.940, 47)	85.560 (91.920, 96.800, 49)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	80.590 (85.570, 86.250, 49)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+89.540
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task ner --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.3 --lr_decay 0.1 --out /projects/lego/vectors_tuned/rand_ner.txt > rand_ner_log
+
+chunk
+1
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.03,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	94.750 (98.160, 98.730, 38)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	96.140 (98.270, 98.970, 6)	95.980 (98.390, 99.330, 10)	95.750 (98.500, 99.320, 11)	95.920 (98.500, 99.790, 34)	
+0.1	0.000 (0.000, 0.000, 0)	96.530 (98.390, 98.720, 9)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	95.430 (97.980, 96.620, 3)	95.540 (98.150, 97.840, 9)	95.650 (98.270, 97.900, 9)	0.000 (0.000, 0.000, 0)	
+0.01	0.000 (0.000, 0.000, 0)	95.540 (97.920, 95.880, 6)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	95.590 (97.810, 95.940, 21)	95.490 (97.810, 95.600, 18)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	95.040 (97.110, 95.180, 47)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+95.750
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task chunk --window_size 3 --l2reg 0.0001 --lower 1 --lr_init 0.3 --lr_decay 0.1 --out /projects/lego/vectors_tuned/rand_chunk.txt > rand_chunk_log
+
+2
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.03,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	94.160 (97.230, 97.830, 11)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	96.030 (98.270, 98.970, 6)	95.980 (98.390, 99.330, 10)	95.470 (98.620, 99.360, 11)	95.640 (98.330, 99.780, 37)	
+0.1	0.000 (0.000, 0.000, 0)	96.530 (98.390, 98.720, 9)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	96.040 (97.920, 95.950, 2)	95.540 (98.150, 97.850, 9)	95.650 (98.330, 97.880, 9)	0.000 (0.000, 0.000, 0)	
+0.01	0.000 (0.000, 0.000, 0)	95.540 (97.920, 95.890, 6)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	95.590 (97.810, 95.930, 21)	96.260 (97.920, 96.910, 36)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	95.150 (97.110, 95.220, 49)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+95.470
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task chunk --window_size 3 --l2reg 0.0001 --lower 1 --lr_init 0.3 --lr_decay 0.1 --out /projects/lego/vectors_tuned/rand_chunk.txt > rand_chunk_log
+
+polar
+1
+	1.0				0.3				0.1				0.03				
+1.0	0.677 (0.659, 0.988, 11)	0.681 (0.664, 0.993, 11)	0.655 (0.639, 0.915, 12)	0.670 (0.666, 0.979, 49)	
+0.3	0.663 (0.646, 0.988, 11)	0.677 (0.653, 0.962, 6)	0.686 (0.663, 0.996, 10)	0.686 (0.668, 0.999, 13)	
+0.1	0.648 (0.640, 0.991, 40)	0.655 (0.642, 0.997, 23)	0.666 (0.645, 0.997, 16)	0.688 (0.659, 1.000, 30)	
+0.03	0.613 (0.606, 0.879, 38)	0.640 (0.626, 0.988, 42)	0.653 (0.637, 0.996, 42)	0.653 (0.636, 0.996, 26)	
+0.01	0.603 (0.584, 0.601, 0)	0.606 (0.594, 0.824, 49)	0.621 (0.612, 0.933, 49)	0.628 (0.618, 0.961, 48)	
+0.003	0.603 (0.584, 0.601, 2)	0.603 (0.584, 0.601, 2)	0.603 (0.584, 0.601, 2)	0.603 (0.584, 0.601, 2)	
+0.001	0.603 (0.584, 0.601, 5)	0.603 (0.584, 0.601, 5)	0.603 (0.584, 0.601, 5)	0.603 (0.584, 0.601, 5)	
+0.686
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task polar --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.3 --lr_decay 0.03 --out /projects/lego/vectors_tuned/rand_polar.txt > rand_polar_log
+
+2
+	1.0				0.3				0.1				0.03				
+1.0	0.678 (0.659, 0.978, 7)	0.685 (0.665, 1.000, 48)	0.651 (0.649, 0.955, 45)	0.616 (0.604, 0.812, 1)	
+0.3	0.656 (0.642, 0.991, 12)	0.682 (0.654, 0.996, 11)	0.689 (0.665, 0.999, 15)	0.686 (0.670, 0.999, 13)	
+0.1	0.647 (0.640, 0.991, 37)	0.656 (0.644, 0.997, 24)	0.671 (0.645, 0.997, 19)	0.687 (0.660, 1.000, 31)	
+0.03	0.613 (0.606, 0.875, 37)	0.644 (0.624, 0.989, 46)	0.647 (0.639, 0.996, 33)	0.650 (0.638, 0.996, 26)	
+0.01	0.603 (0.584, 0.600, 0)	0.605 (0.596, 0.821, 47)	0.620 (0.609, 0.926, 48)	0.633 (0.615, 0.961, 48)	
+0.003	0.602 (0.584, 0.601, 7)	0.602 (0.584, 0.601, 7)	0.602 (0.584, 0.601, 7)	0.602 (0.584, 0.601, 7)	
+0.001	0.602 (0.584, 0.601, 7)	0.602 (0.584, 0.601, 7)	0.602 (0.584, 0.601, 7)	0.602 (0.584, 0.601, 7)	
+0.686
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task polar --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.3 --lr_decay 0.03 --out /projects/lego/vectors_tuned/rand_polar.txt > rand_polar_log
+
+freq_uni
+1
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	0.264 (0.264, 0.228, 1)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	0.273 (0.271, 0.207, 1)	0.270 (0.268, 0.199, 0)	0.270 (0.268, 0.199, 0)	0.270 (0.268, 0.199, 0)	
+0.1	0.000 (0.000, 0.000, 0)	0.272 (0.271, 0.203, 0)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	0.274 (0.273, 0.202, 1)	0.274 (0.273, 0.202, 1)	0.274 (0.273, 0.202, 1)	0.274 (0.273, 0.202, 1)	
+0.01	0.000 (0.000, 0.000, 0)	0.267 (0.266, 0.198, 1)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	0.266 (0.265, 0.194, 2)	0.266 (0.265, 0.194, 2)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	0.266 (0.263, 0.196, 14)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.274
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task freq_uni --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 1.0 --out /projects/lego/vectors_tuned/rand_freq_uni.txt > rand_freq_uni_log
+
+2
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,sg100r_rand.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	0.268 (0.268, 0.203, 1)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	0.273 (0.271, 0.208, 1)	0.270 (0.268, 0.199, 0)	0.270 (0.268, 0.199, 0)	0.270 (0.268, 0.199, 0)	
+0.1	0.000 (0.000, 0.000, 0)	0.272 (0.271, 0.203, 0)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	0.274 (0.273, 0.202, 1)	0.274 (0.273, 0.202, 1)	0.274 (0.273, 0.202, 1)	0.274 (0.273, 0.202, 1)	
+0.01	0.000 (0.000, 0.000, 0)	0.268 (0.267, 0.197, 1)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	0.267 (0.265, 0.200, 7)	0.267 (0.265, 0.200, 7)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	0.266 (0.264, 0.197, 14)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.274
+python2.7 convert_mat_to_txt.py --pre_emb sg100r_rand.txt --task freq_uni --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/rand_freq_uni.txt > rand_freq_uni_log
+
+
+glove100.txt
+pos
+1
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.03,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,1,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,1,15711 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	90.274 (91.259, 97.513, 9)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	91.815 (93.057, 99.322, 4)	91.526 (93.057, 99.235, 6)	91.911 (92.607, 99.976, 18)	90.274 (91.608, 99.633, 22)	
+0.1	92.730 (93.856, 98.677, 4)	91.526 (93.706, 99.019, 5)	92.874 (93.606, 97.736, 3)	92.826 (93.606, 98.366, 4)	
+0.03	92.971 (94.106, 98.087, 6)	92.971 (94.206, 98.461, 7)	0.000 (0.000, 0.000, 0)	92.971 (94.106, 98.477, 7)	
+0.01	0.000 (0.000, 0.000, 0)	93.163 (93.956, 98.437, 20)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	92.874 (93.407, 96.173, 29)	92.537 (93.556, 97.369, 42)	92.971 (93.606, 97.377, 39)	92.874 (93.656, 97.273, 34)	
+0.001	0.000 (0.000, 0.000, 0)	92.104 (92.707, 94.921, 47)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+92.971
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task pos --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/glove_pos.txt > glove_pos_log
+
+2
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,2,15711 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,2,15711 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	89.889 (91.309, 99.155, 18)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	91.719 (92.957, 98.525, 3)	92.056 (93.207, 99.035, 5)	91.382 (92.408, 99.801, 11)	90.226 (91.409, 99.841, 22)	
+0.1	92.393 (93.906, 99.147, 5)	91.815 (93.806, 99.011, 5)	92.585 (93.556, 97.776, 3)	92.585 (93.457, 97.704, 3)	
+0.03	93.067 (94.106, 97.728, 5)	93.211 (94.056, 97.887, 5)	93.211 (94.106, 97.911, 5)	93.260 (94.106, 97.919, 5)	
+0.01	0.000 (0.000, 0.000, 0)	93.308 (94.106, 98.110, 16)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	92.922 (93.506, 96.580, 42)	92.971 (93.656, 97.321, 42)	93.067 (93.756, 97.632, 45)	93.260 (93.856, 98.095, 46)	
+0.001	0.000 (0.000, 0.000, 0)	92.297 (92.557, 94.953, 47)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+93.067
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task pos --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 1.0 --out /projects/lego/vectors_tuned/glove_pos.txt > glove_pos_log
+
+ner
+1
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,1,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,1,iobes,17494 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	82.730 (93.440, 99.560, 13)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	90.120 (94.850, 99.310, 2)	88.300 (94.420, 99.800, 5)	90.500 (94.570, 99.490, 5)	86.480 (94.550, 99.350, 5)	
+0.1	89.470 (95.630, 98.390, 2)	90.110 (95.420, 98.490, 3)	89.370 (95.290, 98.470, 2)	84.990 (95.300, 98.430, 3)	
+0.03	88.810 (95.210, 97.550, 4)	88.490 (95.250, 98.980, 9)	89.350 (95.270, 98.590, 7)	89.440 (95.240, 99.100, 8)	
+0.01	0.000 (0.000, 0.000, 0)	88.520 (95.380, 97.630, 15)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	86.600 (93.550, 95.970, 48)	87.250 (94.390, 97.230, 49)	88.510 (94.960, 97.680, 48)	87.450 (95.030, 97.770, 46)	
+0.001	0.000 (0.000, 0.000, 0)	86.520 (91.280, 93.220, 48)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+89.470
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task ner --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.1 --lr_decay 1.0 --out /projects/lego/vectors_tuned/glove_ner.txt > glove_ner_log
+
+2
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,1e-05,True,32,False,1,2,iobes,17494 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,1e-05,True,32,False,1,2,iobes,17494 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	84.220 (93.420, 99.400, 10)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	89.250 (94.990, 99.170, 2)	89.330 (94.580, 99.900, 7)	89.460 (94.460, 99.820, 7)	89.510 (94.290, 99.690, 7)	
+0.1	89.190 (95.500, 98.370, 2)	89.190 (95.490, 98.390, 2)	88.800 (95.390, 98.540, 3)	89.240 (95.350, 98.410, 2)	
+0.03	88.770 (95.250, 98.340, 7)	89.630 (95.260, 98.850, 7)	90.060 (95.260, 98.980, 7)	90.720 (95.260, 99.260, 10)	
+0.01	0.000 (0.000, 0.000, 0)	88.370 (95.250, 99.100, 32)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	86.570 (93.610, 95.840, 45)	87.000 (94.530, 97.200, 48)	87.730 (94.880, 97.620, 47)	87.620 (94.950, 98.000, 49)	
+0.001	0.000 (0.000, 0.000, 0)	85.330 (91.010, 92.930, 48)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+89.190
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task ner --window_size 3 --l2reg 1e-05 --lower 1 --lr_init 0.1 --lr_decay 1.0 --out /projects/lego/vectors_tuned/glove_ner.txt > glove_ner_log
+
+chunk
+1
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,0.0001,True,32,False,1,1,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,0.0001,True,32,False,1,1,iobes,15441 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	94.980 (97.230, 98.610, 30)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	96.520 (98.210, 99.090, 9)	96.300 (98.210, 99.350, 11)	95.740 (98.270, 99.410, 11)	96.300 (98.210, 99.520, 20)	
+0.1	0.000 (0.000, 0.000, 0)	96.640 (98.620, 98.660, 10)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	97.190 (98.100, 97.120, 3)	96.860 (98.270, 98.310, 15)	96.750 (98.500, 98.530, 17)	96.750 (98.500, 98.540, 17)	
+0.01	0.000 (0.000, 0.000, 0)	97.140 (98.040, 96.880, 7)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	97.190 (97.860, 96.810, 29)	97.350 (97.980, 96.860, 25)	97.250 (97.980, 96.910, 25)	97.250 (97.980, 96.890, 25)	
+0.001	0.000 (0.000, 0.000, 0)	96.860 (97.350, 96.170, 49)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+96.640
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task chunk --window_size 3 --l2reg 0.0001 --lower 1 --lr_init 0.1 --lr_decay 0.3 --out /projects/lego/vectors_tuned/glove_chunk.txt > glove_chunk_log
+
+2
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,3,0.0001,True,32,False,1,2,iobes,15441 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,3,0.0001,True,32,False,1,2,iobes,15441 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	93.660 (97.170, 97.190, 8)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	96.140 (98.160, 98.590, 4)	95.750 (98.270, 98.460, 5)	95.800 (98.270, 99.360, 11)	95.810 (98.100, 97.860, 6)	
+0.1	0.000 (0.000, 0.000, 0)	96.690 (98.500, 98.560, 7)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	97.300 (98.150, 97.590, 8)	96.800 (98.270, 97.700, 8)	96.860 (98.330, 98.990, 43)	96.470 (98.390, 98.370, 15)	
+0.01	0.000 (0.000, 0.000, 0)	97.080 (98.150, 97.630, 19)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	96.860 (97.860, 96.580, 26)	97.080 (97.980, 96.840, 25)	97.190 (97.980, 96.890, 25)	96.970 (97.980, 96.640, 22)	
+0.001	0.000 (0.000, 0.000, 0)	96.420 (97.460, 95.980, 46)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+96.690
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task chunk --window_size 3 --l2reg 0.0001 --lower 1 --lr_init 0.1 --lr_decay 0.3 --out /projects/lego/vectors_tuned/glove_chunk.txt > glove_chunk_log
+
+polar
+1
+	1.0				0.3				0.1				0.03				
+1.0	0.832 (0.827, 0.996, 15)	0.818 (0.809, 0.989, 4)	0.741 (0.735, 0.786, 0)	0.741 (0.735, 0.786, 0)	
+0.3	0.845 (0.834, 0.997, 14)	0.833 (0.830, 0.984, 4)	0.831 (0.823, 0.997, 7)	0.823 (0.820, 0.980, 4)	
+0.1	0.851 (0.847, 0.990, 15)	0.844 (0.837, 0.997, 18)	0.843 (0.841, 0.991, 7)	0.844 (0.841, 0.991, 7)	
+0.03	0.853 (0.850, 0.978, 47)	0.852 (0.850, 0.989, 26)	0.850 (0.850, 0.997, 33)	0.852 (0.848, 0.978, 13)	
+0.01	0.830 (0.834, 0.919, 42)	0.846 (0.846, 0.966, 42)	0.853 (0.850, 0.979, 43)	0.854 (0.851, 0.985, 46)	
+0.003	0.795 (0.800, 0.827, 49)	0.807 (0.811, 0.856, 48)	0.811 (0.822, 0.874, 49)	0.813 (0.827, 0.885, 49)	
+0.001	0.751 (0.749, 0.758, 47)	0.768 (0.764, 0.773, 49)	0.772 (0.768, 0.780, 49)	0.774 (0.769, 0.783, 49)	
+0.854
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task polar --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.01 --lr_decay 0.03 --out /projects/lego/vectors_tuned/glove_polar.txt > glove_polar_log
+
+2
+	1.0				0.3				0.1				0.03				
+1.0	0.821 (0.820, 0.998, 39)	0.812 (0.801, 0.965, 4)	0.693 (0.694, 0.840, 1)	0.777 (0.755, 0.858, 1)	
+0.3	0.843 (0.833, 0.997, 24)	0.832 (0.827, 0.963, 2)	0.835 (0.828, 0.967, 2)	0.833 (0.824, 0.958, 2)	
+0.1	0.856 (0.848, 0.990, 13)	0.847 (0.840, 0.989, 7)	0.845 (0.839, 0.996, 9)	0.845 (0.842, 0.991, 7)	
+0.03	0.852 (0.845, 0.979, 43)	0.856 (0.848, 0.986, 21)	0.857 (0.848, 0.992, 21)	0.857 (0.847, 0.987, 16)	
+0.01	0.826 (0.833, 0.923, 49)	0.846 (0.844, 0.970, 45)	0.852 (0.848, 0.982, 49)	0.855 (0.849, 0.987, 47)	
+0.003	0.794 (0.793, 0.821, 49)	0.802 (0.805, 0.848, 47)	0.806 (0.816, 0.869, 49)	0.806 (0.819, 0.872, 47)	
+0.001	0.727 (0.725, 0.732, 49)	0.748 (0.743, 0.754, 49)	0.757 (0.750, 0.761, 49)	0.758 (0.752, 0.765, 49)	
+0.855
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task polar --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.01 --lr_decay 0.03 --out /projects/lego/vectors_tuned/glove_polar.txt > glove_polar_log
+
+freq_uni
+1
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,0,1e-05,True,32,False,1,1,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,0,1e-05,True,32,False,1,1,67347 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	0.332 (0.332, 0.386, 0)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	0.365 (0.367, 0.535, 1)	0.366 (0.369, 0.549, 1)	0.367 (0.369, 0.543, 1)	0.366 (0.369, 0.543, 1)	
+0.1	0.000 (0.000, 0.000, 0)	0.377 (0.383, 0.482, 0)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	0.389 (0.392, 0.524, 1)	0.389 (0.392, 0.524, 1)	0.388 (0.392, 0.496, 1)	0.388 (0.392, 0.496, 1)	
+0.01	0.000 (0.000, 0.000, 0)	0.388 (0.392, 0.518, 3)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	0.387 (0.391, 0.508, 10)	0.387 (0.391, 0.508, 10)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	0.386 (0.390, 0.492, 27)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.388
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task freq_uni --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.03 --out /projects/lego/vectors_tuned/glove_freq_uni.txt > glove_freq_uni_log
+
+2
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,1.0,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.1,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.01,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.003,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.003,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,1.0,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.1,0,1e-05,True,32,False,1,2,67347 not found
+None,True,True,100,glove100.txt,False,0.0,sgdmomentum,0.001,0.9,0.03,0,1e-05,True,32,False,1,2,67347 not found
+	1.0				0.3				0.1				0.03				
+1.0	0.000 (0.000, 0.000, 0)	0.344 (0.345, 0.416, 0)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.3	0.363 (0.365, 0.423, 0)	0.366 (0.368, 0.526, 1)	0.363 (0.365, 0.423, 0)	0.363 (0.365, 0.423, 0)	
+0.1	0.000 (0.000, 0.000, 0)	0.382 (0.385, 0.513, 0)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.03	0.387 (0.392, 0.526, 1)	0.388 (0.392, 0.523, 1)	0.388 (0.392, 0.523, 1)	0.388 (0.392, 0.523, 1)	
+0.01	0.000 (0.000, 0.000, 0)	0.388 (0.390, 0.510, 3)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.003	0.000 (0.000, 0.000, 0)	0.387 (0.389, 0.498, 10)	0.386 (0.389, 0.517, 14)	0.000 (0.000, 0.000, 0)	
+0.001	0.000 (0.000, 0.000, 0)	0.385 (0.388, 0.490, 32)	0.000 (0.000, 0.000, 0)	0.000 (0.000, 0.000, 0)	
+0.388
+python2.7 convert_mat_to_txt.py --pre_emb glove100.txt --task freq_uni --window_size 0 --l2reg 1e-05 --lower 1 --lr_init 0.03 --lr_decay 0.3 --out /projects/lego/vectors_tuned/glove_freq_uni.txt > glove_freq_uni_log
+
+
+
