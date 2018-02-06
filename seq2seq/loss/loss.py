@@ -99,9 +99,12 @@ class NLLLoss(Loss):
                 raise ValueError("Must provide weight with a mask.")
             weight[mask] = 0
 
+        # super(NLLLoss, self).__init__(
+        #     self._NAME,
+        #     nn.NLLLoss(weight=weight, size_average=size_average))
         super(NLLLoss, self).__init__(
             self._NAME,
-            nn.NLLLoss(weight=weight, size_average=size_average))
+            nn.CrossEntropyLoss(weight=weight, size_average=size_average))
 
     def get_loss(self):
         if isinstance(self.acc_loss, int):
